@@ -1,4 +1,5 @@
 import BlogHero from "./Sections/BlogHero/BlogHero";
+import Footer from "./Sections/Footer/Footer";
 import OurServicesEight from "./Sections/OurServicesEight";
 import OurServicesFirst from "./Sections/OurServicesFirst";
 import OurServicesFive from "./Sections/OurServicesFive";
@@ -20,6 +21,7 @@ const OurServices = () => {
       <OurServicesSix />
       <OurServicesSeven />
       <OurServicesEight />
+      <Footer />
     </div>
   );
 };
