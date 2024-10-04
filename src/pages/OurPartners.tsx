@@ -1,13 +1,14 @@
 import FirstSection from "./Section/FirstSection";
-import AnimatedText from "./Sections/AnimatedText/AnimatedText";
 import BlogHero from "./Sections/BlogHero/BlogHero";
 import Footer from "./Sections/Footer/Footer";
+import OurPartnersGrid from "./Sections/OuPartners/OurPartnersGrid";
 
 const OurPartners = () => {
   return (
     <div>
       <BlogHero title="Our Partners" />
-      <AnimatedText />
+      {/* <AnimatedText /> */}
+      <OurPartnersGrid />
       <FirstSection />
       <Footer />
     </div>

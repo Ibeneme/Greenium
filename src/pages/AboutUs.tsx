@@ -5,11 +5,13 @@ import FirstSection from "./Section/FirstSection";
 import SecondSection from "./SectionSection/SecondSection";
 import ThirdSection from "./SectionSectionThird/ThirdSection";
 import FourthSection from "./SectionSectionThirdFourth/FourthSection";
+import BlogHero from "./Sections/BlogHero/BlogHero";
 import Footer from "./Sections/Footer/Footer";
 
 const AboutUs = () => {
   return (
     <div>
+      <BlogHero title="About Us" />
       <FirstSection />
       <SecondSection />
       <CenteredTextSectionContact />
