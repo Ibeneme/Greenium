@@ -3,11 +3,15 @@ import "./OurPartnersGrid.css"; // Import the CSS file for styling
 
 // Import images using ES6 syntax
 import akwa_ibom from "../../../assets/images/akwa_ibom.jpg";
-import sterling_global from "../../../assets/images/sterling_global.jpeg";
-import NOSL from "../../../assets/images/NOSL.jpeg";
+// import sterling_global from "../../../assets/images/sterling_global.jpeg";
+import NOSL from "../../../assets/new/NOSL.jpeg";
 import NDDC from "../../../assets/images/NDDC.jpeg";
-import ARISE from "../../../assets/images/ARISE.jpeg";
-import alacrity from "../../../assets/images/alacrity.jpeg";
+import seepco from "../../../assets/new/seepco.jpeg";
+import alacrity from "../../../assets/new/alacrity.jpeg";
+import eastern from "../../../assets/new/eastern_obolo.jpeg";
+import ikotabasi from "../../../assets/new/ikotabasi.jpeg";
+import ipr from "../../../assets/new/ipr.jpeg";
+import ibomdev from "../../../assets/new/ibomdev.jpeg";
 // Updated team members with new roles and sample names
 // SamplePartners.ts
 export const teamMembers = [
@@ -21,19 +25,19 @@ export const teamMembers = [
     title: "Eastern Obolo Local Government Area",
     serviceRendered:
       "Procured civil construction services, including the design and construction of residential estates and drainage works, emphasizing sustainable development.",
-    imageUrl: akwa_ibom,
+    imageUrl: eastern,
   },
   {
     title: "Ikot Abasi Local Government Area",
     serviceRendered:
       "Commissioned comprehensive civil engineering projects, involving foundation works and road construction to enhance local infrastructure.",
-    imageUrl: akwa_ibom,
+    imageUrl: ikotabasi,
   },
   {
     title: "Sterling Global Oil Exploration and Production Co. Ltd",
     serviceRendered:
       "Executed a contract for comprehensive electrical maintenance services for gas turbines and load centers, optimizing operational efficiency.",
-    imageUrl: sterling_global,
+    imageUrl: seepco,
   },
   {
     title: "Natural Oilfield Services Limited (NOSL)",
@@ -54,22 +58,22 @@ export const teamMembers = [
     imageUrl: NDDC,
   },
   {
-    title: "Arise",
+    title: "Industrial Platform Remo",
     serviceRendered:
       "Procured manpower supply and management services, ensuring compliance with safety and health standards in project execution.",
-    imageUrl: ARISE,
+    imageUrl: ipr,
   },
-  {
-    title: "Silver Tiara Logistics Limited (STLL)",
-    serviceRendered:
-      "Executed a contract for plant and equipment hire services, including scaffolding materials and inspection instruments, to enhance project efficiency.",
-    imageUrl: akwa_ibom,
-  },
+  // {
+  //   title: "Silver Tiara Logistics Limited (STLL)",
+  //   serviceRendered:
+  //     "Executed a contract for plant and equipment hire services, including scaffolding materials and inspection instruments, to enhance project efficiency.",
+  //   imageUrl: akwa_ibom,
+  // },
   {
     title: "Ibom Developer FZE",
     serviceRendered:
       "Commissioned construction and maintenance contracts for roads and buildings, focusing on quality and timely delivery of projects.",
-    imageUrl: akwa_ibom,
+    imageUrl: ibomdev,
   },
   {
     title: "Alacrity Production",

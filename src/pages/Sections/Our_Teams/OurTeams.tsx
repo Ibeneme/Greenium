@@ -94,7 +94,7 @@ const OurTeam: React.FC = () => {
 
   return (
     <section className="our-team">
-      <h2 className="section-header-teams">Our Team</h2>
+      <h2 className="section-header-teams">Meet Our Team</h2>
       <p className="section-paragraph-teams">Profiles of Key Team Members</p>
       <div className="team-members">
         {teamMembers.map((member, index) => (

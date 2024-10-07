@@ -6,8 +6,8 @@ import FirstSection from "./Section/FirstSection";
 import SecondSection from "./SectionSection/SecondSection";
 import ThirdSection from "./SectionSectionThird/ThirdSection";
 import FourthSection from "./SectionSectionThirdFourth/FourthSection";
-import AnimatedText from "./Sections/AnimatedText/AnimatedText";
 import Footer from "./Sections/Footer/Footer";
+import OurPartnersGrid from "./Sections/OuPartners/OurPartnersGrid";
 import OurTeam from "./Sections/Our_Teams/OurTeams";
 
 const Index = () => {
@@ -20,7 +20,7 @@ const Index = () => {
       <CenteredTextSectionPink />
       <ThirdSection />
       <FourthSection />
-      <AnimatedText />
+      <OurPartnersGrid />
       <OurTeam />
       <FirstSection />
       <CenteredTextSection />
