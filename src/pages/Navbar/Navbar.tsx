@@ -49,6 +49,11 @@ const Navbar: React.FC = () => {
           <a href="/services" onClick={closeMobileMenu}>
             Our Services
           </a>
+        </li>{" "}
+        <li>
+          <a href="/projects" onClick={closeMobileMenu}>
+            Our Projects
+          </a>
         </li>
         <li>
           <a href="/partners" onClick={closeMobileMenu}>
