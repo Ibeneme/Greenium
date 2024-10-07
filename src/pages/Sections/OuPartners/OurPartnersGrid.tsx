@@ -11,7 +11,7 @@ import alacrity from "../../../assets/new/alacrity.jpeg";
 import eastern from "../../../assets/new/eastern_obolo.jpeg";
 import ikotabasi from "../../../assets/new/ikotabasi.jpeg";
 import ipr from "../../../assets/new/ipr.jpeg";
-import ibomdev from "../../../assets/new/ibomdev.jpeg";
+import ibomdev from "../../../assets/new/Ibomdev.jpeg";
 // Updated team members with new roles and sample names
 // SamplePartners.ts
 export const teamMembers = [
