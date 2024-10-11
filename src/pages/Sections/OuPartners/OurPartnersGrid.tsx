@@ -12,6 +12,7 @@ import eastern from "../../../assets/new/eastern_obolo.jpeg";
 import ikotabasi from "../../../assets/new/ikotabasi.jpeg";
 import ipr from "../../../assets/new/ipr.jpeg";
 import ibomdev from "../../../assets/new/Ibomdev.jpeg";
+import NNL from "../../../assets/new/NNL.jpg";
 // Updated team members with new roles and sample names
 // SamplePartners.ts
 export const teamMembers = [
@@ -49,7 +50,7 @@ export const teamMembers = [
     title: "Nemissis Nigeria Limited (NNL)",
     serviceRendered:
       "Executed mechanical installation and maintenance contracts for generators, ensuring reliable operations in harsh environments.",
-    imageUrl: NDDC,
+    imageUrl: NNL,
   },
   {
     title: "Niger Delta Development Commission (NDDC)",
@@ -125,7 +126,11 @@ const OurPartnersGrid: React.FC = () => {
             ref={(el) => (overlayRefs.current[index] = el)}
           >
             <div className="team-member-image">
-              <img src={member.imageUrl} alt={member.title} />
+              <img
+                src={member.imageUrl}
+                alt={member.title}
+                style={{ height: 400 }}
+              />
               <div className="team-member-bio">
                 <p>{member.title}</p>
               </div>

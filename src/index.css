@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+/* Import is removed because we are using a system font (Times New Roman) */
 
+/* Global Styles */
 :root {
-  --fontFamily: "Plus Jakarta Sans";
-  padding: 0;
+  /* --fontFamily: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0; */
   margin: 0;
+  padding: 0;
+  --fontFamily:Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Ensure that all elements have consistent box-sizing */
@@ -15,7 +18,8 @@
 
 /* Example usage */
 body {
-  font-family: "Plus Jakarta Sans";
+  font-family: var(--fontFamily);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -44,43 +48,40 @@ small {
 }
 
 h1 {
-  font-family: "Plus Jakarta Sans";
+  font-family: var(--fontFamily);
   font-weight: 900;
   /* Black weight */
 }
 
 h2 {
-  font-family: "Plus Jakarta Sans";
+  font-family: var(--fontFamily);
   font-weight: 700;
   /* Bold weight */
 }
 
 h3 {
-  font-family: "Plus Jakarta Sans";
+  font-family: var(--fontFamily);
   font-weight: 500;
   /* Medium weight */
 }
 
 p {
-  font-family: "Plus Jakarta Sans";
+  font-family: var(--fontFamily);
   font-weight: 400;
   /* Book weight */
 }
 
 li,
 .a {
-  font-family: "Plus Jakarta Sans";
+  font-family: var(--fontFamily);
   font-weight: 500;
-
 }
 
 small {
-  font-family: "Plus Jakarta Sans";
+  font-family: var(--fontFamily);
   font-weight: 300;
   /* Light weight */
 }
-
-
 
 /* Color Variables */
 :root {
@@ -96,7 +97,7 @@ small {
 
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--fontFamily);
   color: var(--black);
   background-color: var(--white);
   margin: 0;
@@ -113,8 +114,6 @@ header {
 header h1 {
   margin: 0;
 }
-
-
 
 /* Buttons */
 .button-primary {
