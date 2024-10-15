@@ -4,7 +4,7 @@ import coaster from "../../../assets/projects/newcoaster.jpg";
 import grass_cutter from "../../../assets/projects/grass_cutter.jpeg";
 import sandbags from "../../../assets/projects/sandbags.jpeg";
 import electrical from "../../../assets/projects/electrical.jpeg";
-import hardwood from "../../../assets/projects/hardwood.jpg";
+import hardwood from "../../../assets/projects/hardwood.jpeg";
 import lan from "../../../assets/projects/lan.jpg";
 
 interface Project {
@@ -17,7 +17,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    company: "Nigerian agip oil company limited",
+    company: "Nigerian Agip Oil Company Limited",
     service: "Procurement of Various Electrical Materials",
     description:
       "The project involves the procurement of a wide range of electrical materials to support industrial and residential installations. This includes high-quality transformers, switchgears, electrical wiring accessories, power cables, circuit breakers, electrical panels, and energy-efficient lighting solutions. The procurement process focuses on ensuring all items meet the industry standards for safety and durability.",
@@ -58,9 +58,8 @@ const projects: Project[] = [
     backgroundColor: "#fff",
     image: hardwood,
   },
-
   {
-    company: "Bqube it",
+    company: "Bqube",
     service: "Supply and Installation of LAN Structural Cabling",
     description:
       "The project involves the supply and installation of Local Area Network (LAN) structural cabling at the OGPF office operations and maintenance admin block in Iko Town, Akwa Ibom State. This includes the provision of high-quality cables, connectors, and network hardware to establish a robust communication infrastructure. The focus is on ensuring efficient data transmission, network stability, and seamless connectivity across the office premises. The installation process adheres to industry standards and best practices to guarantee long-term reliability and performance.",
@@ -75,17 +74,34 @@ const ProjectDisplay: React.FC = () => {
       {projects.map((project, index) => (
         <div
           key={index}
-          className="project-card"
+          className={`project-card ${index % 2 === 0 ? "even" : "odd"}`}
           style={{ backgroundColor: project.backgroundColor }}
         >
-          <img src={project.image} alt={`${project.company} project`} />
-          <h4>{project.company}</h4>
-          <h3>{project.service}</h3>
-          <p>{project.description}</p>
+          {index % 2 === 0 ? (
+            <>
+              <div className="project-info">
+                <h4>{project.company}</h4>
+                <h3>{project.service}</h3>
+                <p>{project.description}</p>
+              </div>
+              <div className="project-image">
+                <img src={project.image} alt={`${project.company} project`} />
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="project-image">
+                <img src={project.image} alt={`${project.company} project`} />
+              </div>
+              <div className="project-info">
+                <h4>{project.company}</h4>
+                <h3>{project.service}</h3>
+                <p>{project.description}</p>
+              </div>
+            </>
+          )}
         </div>
       ))}
-
-      <div style={{ marginTop: 130 }}></div>
     </div>
   );
 };
