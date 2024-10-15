@@ -1,6 +1,6 @@
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     padding: 20px;
     background-color: #f4f4f4;
@@ -10,7 +10,18 @@
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    background-color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+}
 
+
+
+.project-card img {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
 }
 
 .project-card h3 {
@@ -34,4 +45,5 @@
     color: #999;
     font-size: 0.9em;
     font-family: var(--fontFamily);
+    line-height: 1.5;
 }

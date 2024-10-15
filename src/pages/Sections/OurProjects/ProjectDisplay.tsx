@@ -1,11 +1,18 @@
 import React from "react";
 import "./ProjectDisplay.css";
+import coaster from "../../../assets/projects/newcoaster.jpg";
+import grass_cutter from "../../../assets/projects/grass_cutter.jpeg";
+import sandbags from "../../../assets/projects/sandbags.jpeg";
+import electrical from "../../../assets/projects/electrical.jpeg";
+import hardwood from "../../../assets/projects/hardwood.jpg";
+import lan from "../../../assets/projects/lan.jpg";
 
 interface Project {
   company: string;
   service: string;
   description: string;
   backgroundColor: string;
+  image?: string;
 }
 
 const projects: Project[] = [
@@ -15,67 +22,70 @@ const projects: Project[] = [
     description:
       "The project involves the procurement of a wide range of electrical materials to support industrial and residential installations. This includes high-quality transformers, switchgears, electrical wiring accessories, power cables, circuit breakers, electrical panels, and energy-efficient lighting solutions. The procurement process focuses on ensuring all items meet the industry standards for safety and durability.",
     backgroundColor: "#fff",
-    //backgroundColor: "#FDEDEC"
+    image: electrical,
   },
   {
-    company: "PowerTech Solutions",
-    service:
-      "Electrical Design, Installation and Maintenance\nFor Industrial and Residential Projects",
+    company: "SILVER TIARA LOGISTICS LIMITED",
+    service: "Vehicle Deployment and Maintenance for Operational Services",
     description:
-      "Our electrical services include comprehensive construction and installation of high/low voltage transmission systems, transformers, and rural electrification projects. We handle commissioning and maintenance of gas turbines, substations, booster pumps, and load centers. Additionally, we specialize in the insulation of alkaline batteries, bus bar insulation, and integrity checks on MCC panels. PowerTech provides top-quality materials, including electrical appliances, electronic apparatus, and equipment, ensuring reliability and longevity in all electrical installations.",
+      "This project offer from GREENIUM RESOURCES LIMITED to SILVER TIARA LOGISTICS LIMITED details the provision of comprehensive fleet management services, including the deployment of various vehicle types, primarily Hilux, Sienna, Hiace buses, and Coaster buses, for diverse operational needs. The primary objective is to facilitate AGO distribution, base operations, security, interstate movements, drilling, surveillance, food distribution, airport movements, warehouse logistics, and workers’ transportation.",
     backgroundColor: "#fff",
-    //backgroundColor: "#EBF5FB"
+    image: coaster,
   },
   {
-    company: "MegaBuild Inc.",
+    company: "NOSL",
     service:
-      "Mechanical Construction and Supervision\nIncluding Inspection and Quality Control",
+      "Provision of Internal and external grass cutting services in and around former rig 4 site (Ekim west) on callout Basis",
     description:
-      "MegaBuild offers extensive mechanical construction services, including welding and fabrication of complex structures. We handle repairs and maintenance on pipelines, plot piping, and provide structural steel design for industrial applications. Our expertise covers diesel engines/generators repairs, compressors – pneumatics, and offshore mooring buoy maintenance. We also fabricate flashing supports and hook-up arms, ensuring precision in each step. With a focus on thermal and cold insulation, we supply mechanical tools and materials essential for large-scale projects.",
+      "The project involves the provision of comprehensive grass cutting and vegetation management services for both internal and external areas surrounding the former Rig 4 site (Ekim West). These services will be delivered on a callout basis, ensuring prompt response and maintenance whenever required. The primary objective is to maintain a clean, safe, and visually appealing environment by controlling the growth of grass and other vegetation, adhering to industry standards for safety and site aesthetics.",
     backgroundColor: "#fff",
-    //backgroundColor: "#E8F8F5"
+    image: grass_cutter,
   },
   {
-    company: "EcoSafe Developers",
-    service: "Civil Design and Construction\nFor Urban and Rural Development",
-    description:
-      "EcoSafe Developers is renowned for its civil engineering capabilities, specializing in reinforced concrete wall embankments and residential estate developments. We manage flood and erosion control projects, design methanol tanks, and road pavements, ensuring environmental stability. Our team undertakes foundation and bund wall rehabilitation, jetty constructions, and maintenance of infrastructure. Additionally, we handle roof waterproofing, water treatment plant installations, and borehole drilling for sustainable water supply systems.",
-    backgroundColor: "#fff",
-    //backgroundColor: "#FEF9E7"
-  },
-  {
-    company: "FireGuard Technologies",
+    company: "NEMISSIS NIG LTD",
     service:
-      "Fire Proofing and Passive Protection\nAgainst Jet and Hydrocarbon Fires",
+      "Renovation of 5 Caravans and Erection of Security Sandbag Posts for Navy at OGPF Area",
     description:
-      "FireGuard Technologies delivers robust fire-proofing solutions for offshore platforms, facilities, and installations. We specialize in passive fire protection strategies to mitigate the risks associated with jet and hydrocarbon fires. Our services are engineered to enhance the safety of industrial and residential setups by integrating the latest in fire-resistant materials and technologies. Our team's attention to detail ensures that all protective measures adhere to stringent safety standards, reducing potential fire hazards.",
+      "This project involves the renovation of five caravans to enhance their structural integrity, functionality, and comfort for personnel stationed at the OGPF area. Additionally, the project includes the erection of strategically positioned security sandbag posts to bolster defensive capabilities for the Navy. The goal is to improve the living and working conditions for naval forces while providing reinforced security measures, ensuring a safer and more secure operational environment.",
     backgroundColor: "#fff",
-    //backgroundColor: "#FDFEFE"
+    image: sandbags,
   },
   {
-    company: "Machinery World",
-    service:
-      "Plant and Equipment Hire\nFor Industrial and Construction Projects",
+    company: "Nigerian Agip Oil Company Limited",
+    service: "Procurement of High-Quality Hardwood Materials",
     description:
-      "Machinery World provides a diverse range of plant and equipment hire services tailored to meet industrial and construction needs. We offer downhole gauges, blasting and painting equipment, and advanced cathodic protection/pipeline integrity check tools. Our inventory includes scaffolding materials like tubes, couplers, and ladders, as well as specialized drilling equipment like hammer rigs and rotary tripods. With our high-quality machinery, we enable clients to execute their projects with greater efficiency and precision.",
-    backgroundColor: "#fff", //backgroundColor: "#EAF2F8"
+      "This project involves the procurement of durable hardwood materials essential for various construction and industrial applications. The range of hardwood includes treated timber, plywood, and other wood products that meet the industry's highest standards for strength, durability, and resistance to environmental factors. The procurement process ensures that all materials are sourced sustainably, adhering to environmental regulations and quality control measures to provide long-lasting solutions for both structural and decorative uses.",
+    backgroundColor: "#fff",
+    image: hardwood,
+  },
+
+  {
+    company: "Bqube it",
+    service: "Supply and Installation of LAN Structural Cabling",
+    description:
+      "The project involves the supply and installation of Local Area Network (LAN) structural cabling at the OGPF office operations and maintenance admin block in Iko Town, Akwa Ibom State. This includes the provision of high-quality cables, connectors, and network hardware to establish a robust communication infrastructure. The focus is on ensuring efficient data transmission, network stability, and seamless connectivity across the office premises. The installation process adheres to industry standards and best practices to guarantee long-term reliability and performance.",
+    backgroundColor: "#fff",
+    image: lan,
   },
 ];
 
 const ProjectDisplay: React.FC = () => {
   return (
-    <div className="project-container">
+    <div className="project-container" style={{ marginTop: 120 }}>
       {projects.map((project, index) => (
         <div
           key={index}
           className="project-card"
           style={{ backgroundColor: project.backgroundColor }}
         >
+          <img src={project.image} alt={`${project.company} project`} />
           <h4>{project.company}</h4>
           <h3>{project.service}</h3>
           <p>{project.description}</p>
         </div>
       ))}
+
+      <div style={{ marginTop: 130 }}></div>
     </div>
   );
 };
