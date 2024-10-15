@@ -1,18 +1,18 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./OurPartnersGrid.css"; // Import the CSS file for styling
 
 // Import images using ES6 syntax
-import akwa_ibom from "../../../assets/images/akwa_ibom.jpg";
+import akwa_ibom from "../../../assets/new/ibomgov.png";
 // import sterling_global from "../../../assets/images/sterling_global.jpeg";
-import NOSL from "../../../assets/new/NOSL.jpeg";
+import NOSL from "../../../assets/new/NOSL.png";
 import NDDC from "../../../assets/images/NDDC.jpeg";
-import seepco from "../../../assets/new/seepco.jpeg";
-import alacrity from "../../../assets/new/alacrity.jpeg";
-import eastern from "../../../assets/new/eastern_obolo.jpeg";
-import ikotabasi from "../../../assets/new/ikotabasi.jpeg";
-import ipr from "../../../assets/new/ipr.jpeg";
-import ibomdev from "../../../assets/new/Ibomdev.jpeg";
-import NNL from "../../../assets/new/NNL.jpg";
+import seepco from "../../../assets/new/seepco.png";
+import alacrity from "../../../assets/new/alacrity.png";
+import eastern from "../../../assets/new/eastern_obolo.png";
+import ikotabasi from "../../../assets/new/ikotabasi.png";
+import ipr from "../../../assets/new/ipr.png";
+import ibomdev from "../../../assets/new/Ibomdev.png";
+import NNL from "../../../assets/new/NNL.png";
 // Updated team members with new roles and sample names
 // SamplePartners.ts
 export const teamMembers = [
@@ -85,32 +85,32 @@ export const teamMembers = [
 ];
 
 const OurPartnersGrid: React.FC = () => {
-  const overlayRefs = useRef<(HTMLDivElement | null)[]>([]);
+  // const overlayRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show-content");
-          } else {
-            entry.target.classList.remove("show-content");
-          }
-        });
-      },
-      { threshold: 0.5 } // Trigger when 50% of the item is in view
-    );
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           entry.target.classList.add("show-content");
+  //         } else {
+  //           entry.target.classList.remove("show-content");
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.5 } // Trigger when 50% of the item is in view
+  //   );
 
-    overlayRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
+  //   overlayRefs.current.forEach((ref) => {
+  //     if (ref) observer.observe(ref);
+  //   });
 
-    return () => {
-      overlayRefs.current.forEach((ref) => {
-        if (ref) observer.unobserve(ref);
-      });
-    };
-  }, []);
+  //   return () => {
+  //     overlayRefs.current.forEach((ref) => {
+  //       if (ref) observer.unobserve(ref);
+  //     });
+  //   };
+  // }, []);
 
   return (
     <section className="our-team">
@@ -123,7 +123,7 @@ const OurPartnersGrid: React.FC = () => {
           <div
             className="team-member"
             key={index}
-            ref={(el) => (overlayRefs.current[index] = el)}
+            //ref={(el) => (overlayRefs.current[index] = el)}
           >
             <div className="team-member-image">
               <img

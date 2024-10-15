@@ -52,13 +52,13 @@
     height: 100%;
     object-fit: cover; /* Ensure the image covers the entire container */
     transition: filter 0.3s ease-in-out;
-    filter: grayscale(100%);
+    filter: grayscale(0%);
     padding: 16px
 }
 
 .team-member:hover .team-member-image img,
 .team-member:focus-within .team-member-image img {
-    filter: grayscale(-10%);
+    filter: grayscale(0%);
 }
 
 .team-member-info {
