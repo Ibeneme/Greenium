@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 import "./SecondSection.css"; // Import your CSS file here
 
 // Import your image
-import exampleImage from "../../assets/recom/hetmet.jpg"; // Update the path to your image
+import exampleImage from "../../assets/recom/board.jpg"; // Update the path to your image
 
 const SecondSection: React.FC = () => {
   return (

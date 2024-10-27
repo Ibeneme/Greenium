@@ -5,7 +5,7 @@ import "./OurServices.css";
 // Import your CSS file here
 // Import your image
 
-import exampleImage from "../../assets/recom/anticoro.png"; // Update the path to your image
+import exampleImage from "../../assets/recom/corro.jpg"; // Update the path to your image
 
 const OurServicesSecond: React.FC = () => {
   return (
