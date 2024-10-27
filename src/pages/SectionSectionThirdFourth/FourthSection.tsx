@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 import "./FourthSection.css"; // Import your CSS file here
 
 // Import your image
-import exampleImage from "../../assets/images/flexx.png"; // Update the path to your image
+import exampleImage from "../../assets/recom/eme.jpg"; // Update the path to your image
 
 const FourthSection: React.FC = () => {
   return (
