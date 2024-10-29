@@ -9,7 +9,7 @@ import exampleImage from "../../assets/recom/other.jpg"; // Update the path to y
 
 const OurServicesSeven: React.FC = () => {
   return (
-    <section className="why-choose-us-section-a">
+    <section className="why-choose-us-section">
       <div className="why-choose-us-text">
         <h2>OTHER SERVICES</h2>
         <p style={{ lineHeight: 1.7 }}>

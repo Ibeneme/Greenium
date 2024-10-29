@@ -9,7 +9,7 @@ import exampleImage from "../../assets/recom/mech.jpg"; // Update the path to yo
 
 const OurServicesFive: React.FC = () => {
   return (
-    <section className="why-choose-us-section-a">
+    <section className="why-choose-us-section">
       <div className="why-choose-us-text">
         <h2>MECHANICAL (CONSTRUCTION, SUPERVISION AND INSPECTION)</h2>
         <p style={{ lineHeight: 1.7 }}>

@@ -93,43 +93,45 @@ const OurTeam: React.FC = () => {
   }, []);
 
   return (
-    <section className="our-team">
-      <h2 className="section-header-teams">Meet Our Team</h2>
-      <p className="section-paragraph-teams">Profiles of Key Team Members</p>
-      <div className="team-members">
-        {teamMembers.map((member, index) => (
-          <div
-            className="team-member"
-            key={index}
-            ref={(el) => (overlayRefs.current[index] = el)}
-          >
-            <div className="team-member-image">
-              <img src={member.image} alt={member.name} />
-              <div className="team-member-bio">
+    <>
+      <section className="our-team" style={{ display: "none" }}>
+        <h2 className="section-header-teams">Meet Our Team</h2>
+        <p className="section-paragraph-teams">Profiles of Key Team Members</p>
+        <div className="team-members">
+          {teamMembers.map((member, index) => (
+            <div
+              className="team-member"
+              key={index}
+              ref={(el) => (overlayRefs.current[index] = el)}
+            >
+              <div className="team-member-image">
+                <img src={member.image} alt={member.name} />
+                <div className="team-member-bio">
+                  <p>{member.bio}</p>
+                </div>
+              </div>
+              <div className="team-member-info">
+                <h3>{member.name}</h3>
+                <p>{member.title}</p>
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    backgroundColor: "#000",
+                    color: "#C4D92E",
+                    padding: "4px 12px",
+                  }}
+                >
+                  View LinkedIn
+                </a>
                 <p>{member.bio}</p>
               </div>
             </div>
-            <div className="team-member-info">
-              <h3>{member.name}</h3>
-              <p>{member.title}</p>
-              <a
-                href={member.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  backgroundColor: "#000",
-                  color: "#C4D92E",
-                  padding: "4px 12px",
-                }}
-              >
-                View LinkedIn
-              </a>
-              <p>{member.bio}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 

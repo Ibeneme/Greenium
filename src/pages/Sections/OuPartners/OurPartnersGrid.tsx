@@ -5,7 +5,7 @@ import "./OurPartnersGrid.css"; // Import the CSS file for styling
 import akwa_ibom from "../../../assets/new/ibomgov.png";
 // import sterling_global from "../../../assets/images/sterling_global.jpeg";
 import NOSL from "../../../assets/new/NOSL.png";
-import NDDC from "../../../assets/images/NDDC.jpeg";
+import NDDC from "../../../assets/images/NDDC.png";
 import seepco from "../../../assets/new/seepco.png";
 import alacrity from "../../../assets/new/alacrity.png";
 import eastern from "../../../assets/new/eastern_obolo.png";
